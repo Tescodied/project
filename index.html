@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learnity - Personalized Learning</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="claude/media/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../media/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <nav class="container">
-            <a href="#top" class="logo">Learnity</a>
+            <a href="#top" class="logo left-logo">Learnity</a>
             <ul class="nav-links">
                 <li><a href="#features" class="logo">Features</a></li>
                 <li><a href="#how-it-works" class="logo">How It Works</a></li>
@@ -21,8 +21,8 @@
                 <li><a href="#contact" class="logo">Contact</a></li>
             </ul>
             <div class="auth-buttons">
-                <a href="#" class="btn btn-primary">Get Started</a>
-                <a href="claude/login/auth.html" class="btn logo">Login</a>
+                <a href="#" class="btn btn-primary nav-btn" id="nav-get-started">Get Started</a>
+                <a href="../login/auth.html" class="btn logo underline-hover">Login</a>
             </div>
         </nav>
     </header>
@@ -33,9 +33,8 @@
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Personalized AI Education for Every Student</h1>
-                <p>Empower teachers with AI-driven assessments and give students personalized learning experiences that
-                    adapt to their unique strengths and challenges.</p>
+                <h1>Personalized AI Education.</h1>
+                <p>AI-powered assessment tools provide students with personalized learning that adjusts to their individual strengths and weaknesses.</p>
                 <div class="hero-buttons">
                     <a href="#" class="btn-primary">Start Free Trial</a>
                     <a href="#" class="btn-secondary">Watch Demo</a>
@@ -50,39 +49,47 @@
             <h2 class="section-title">Why Choose Us?</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Personalized AI Tutoring</h3>
-                    <p>Each student will receive their own AI assisstant that adapts to their learning style, strengths, and areas
-                        for improvement.</p>
+                    <div class="feature-icon">Personalized AI Tutoring</div>
+                    <div class="feature-content">
+                        <p>Each student will receive their own AI assisstant that adapts to their learning style, strengths,
+                            and areas for improvement.</p>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Smart Diagnostic Assessment</h3>
-                    <p>A quick assessment will help us identify each student’s strengths and gaps, allowing us to create a personalized learning path.</p>
+                    <div class="feature-icon">Smart Diagnostic Assessment</div>
+                    <div class="feature-content">
+                        <p>A quick assessment will allow us to identify each student’s strengths and gaps, allowing us to
+                            create a personalized learning path.</p>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🎮</div>
-                    <h3>Gamified<br>Learning</h3>
-                    <p>Interactive games and activities keep students engaged while reinforcing key concepts and skills.
-                    </p>
+                    <div class="feature-icon">Gamified Learning</div>
+                    <div class="feature-content">
+                        <p>Offering game-like activities will boost motivation and reduce stress in traditionally intense
+                            educational settings,
+                            all while reinforcing key concepts and skills.</p>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">👩‍🏫</div>
-                    <h3>Teacher Dashboard</h3>
-                    <p>Comprehensive tools for teachers to monitor progress, assign targeted questions, and manage
-                        multiple classes.</p>
+                    <div class="feature-icon">Teacher Dashboard</div>
+                    <div class="feature-content">
+                        <p>Comprehensively tuned tools for teachers allow you to monitor progress, assign targeted questions
+                            at the press of a button, and manage multiple classes.</p>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📈</div>
-                    <h3>Real-Time Analytics</h3>
-                    <p>Track student progress, identify learning patterns, and get insights to improve educational
-                        outcomes.</p>
+                    <div class="feature-icon">Real-Time Analytics</div>
+                    <div class="feature-content">
+                        <p>Track student progress, identify learning patterns through diagrams like graphs and charts, and
+                            gain insights to improve educational outcomes.</p>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🌟</div>
-                    <h3>Adaptive Learning</h3>
-                    <p>AI adjusts difficulty and content based on student performance, ensuring optimal challenge and
-                        growth.</p>
+                    <div class="feature-icon">Adaptive Learning</div>
+                    <div class="feature-content">
+                        <p>AI adjusts difficulty and content based on student performance, ensuring optimal challenge and
+                            growth.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,35 +98,28 @@
     <!-- How It Works Section -->
     <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <h2 class="section-title">How Learnity Works</h2>
+            <h2 class="section-title">How <strong>Learnity</strong> Works</h2>
             <div class="steps">
                 <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Teacher Setup</h3>
+                    <h3>1. Teacher Setup</h3>
                     <p>Teachers create accounts and set up their classes with student profiles after signing a contract.
                     </p>
                 </div>
                 <div class="step">
-                    <div class="step-number">2</div>
                     <h3>Student Assessment</h3>
                     <p>Students complete a diagnostic exam to identify their strengths and areas needing improvement.
                     </p>
                 </div>
                 <div class="step">
-                    <div class="step-number">3</div>
                     <h3>AI Personalization</h3>
                     <p>Each student receives a personalized AI chatbot tutor based on their assessment results.</p>
                 </div>
-            </div>
-            <div class="steps">
                 <div class="step">
-                    <div class="step-number">4</div>
                     <h3>Targeted Learning</h3>
                     <p>Teachers can trigger personalized question sets and activities to reinforce learning objectives.
                     </p>
                 </div>
                 <div class="step">
-                    <div class="step-number">5</div>
                     <h3>Gamified Practice</h3>
                     <p>Students engage with game-like activities that make learning fun and reinforce key concepts.</p>
                 </div>
@@ -131,13 +131,13 @@
     <section class="pricing" id="pricing">
         <div class="container">
             <h2 class="section-title">Simple, Transparent Pricing</h2>
-            <p class="section-subtitle">Choose the perfect plan for your classroom or school</p>
+            <p class="section-subtitle">Choose the perfect plan for <strong>YOUR</strong> students</p>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3 class="plan-name">Basic</h3>
-                    <div class="plan-price">$29</div>
-                    <div class="plan-period">per month / per classroom</div>
+                    <div class="plan-price">£-</div>
+                    <div class="plan-period">Flexible Billing</div>
                     <ul class="plan-features">
                         <li>Up to 30 students</li>
                         <li>Basic AI tutoring</li>
@@ -150,8 +150,8 @@
 
                 <div class="pricing-card popular">
                     <h3 class="plan-name">Professional</h3>
-                    <div class="plan-price">$79</div>
-                    <div class="plan-period">per month / per classroom</div>
+                    <div class="plan-price">£-</div>
+                    <div class="plan-period">Flexible Billing</div>
                     <ul class="plan-features">
                         <li>Up to 50 students</li>
                         <li>Advanced AI tutoring</li>
@@ -166,7 +166,7 @@
                 <div class="pricing-card">
                     <h3 class="plan-name">Enterprise</h3>
                     <div class="plan-price">Custom</div>
-                    <div class="plan-period">for schools & districts</div>
+                    <div class="plan-period">for schools & counties</div>
                     <ul class="plan-features">
                         <li>Unlimited students</li>
                         <li>Custom AI models</li>
@@ -175,7 +175,7 @@
                         <li>Dedicated support</li>
                         <li>Training & onboarding</li>
                     </ul>
-                    <a href="#" class="btn-primary">Contact Sales</a>
+                    <a href="#" class="btn-primary">Request Trial</a>
                 </div>
             </div>
         </div>
@@ -185,7 +185,7 @@
     <section class="cta">
         <div class="container">
             <h2>Ready to Transform Your Classroom?</h2>
-            <p>Join thousands of educators already using EduSmart to personalize learning for their students.</p>
+            <p>Join 1,000+ students already using Learnity to personalize learning for their students.</p>
             <div class="hero-buttons">
                 <a href="#" class="btn btn-secondary btn-large">Schedule Demo</a>
                 <a href="#" class="btn btn-primary btn-large">Start Free Trial</a>
@@ -198,8 +198,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>LearnAI</h3>
-                    <p>Transforming education with AI-powered personalized learning experiences.</p>
+                    <h3>Learnity</h3>
+                    <p>Adapt to future education with AI-powered personalized learning experiences.</p>
                 </div>
 
                 <div class="footer-section">
