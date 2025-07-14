@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnity - Sign Up & Login</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <a href="../home/index.html" class="back-to-home">← Back to Home</a>
+    
+    <div class="auth-container">
+        <div class="logo">
+            <h1>Learnity</h1>
+            <p>Personalized Learning for Every Student</p>
+        </div>
+
+        <div class="auth-tabs">
+            <button class="tab-button active" data-tab="login">Login</button>
+            <button class="tab-button" data-tab="signup">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-section active" id="login">
+            <form id="loginForm">
+                <div class="user-type-selector">
+                    <div class="user-type selected" data-type="teacher">
+                        <div class="user-type-icon">👩‍🏫</div>
+                        <h3>Teacher</h3>
+                        <p>Manage classes</p>
+                    </div>
+                    <div class="user-type" data-type="student">
+                        <div class="user-type-icon">🎓</div>
+                        <h3>Student</h3>
+                        <p>Start learning</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Login</button>
+                
+                <div class="toggle-form">
+                    <a href="#" id="forgotPassword">Forgot password?</a>
+                </div>
+            </form>
+
+            <div class="divider">
+                <span>Or continue with</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn">
+                    <span>🔍</span> Google
+                </button>
+                <button class="social-btn">
+                    <span>📘</span> Microsoft
+                </button>
+            </div>
+
+            <div class="toggle-form">
+                Don't have an account? <a href="#" data-toggle="signup">Sign up</a>
+            </div>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-section" id="signup">
+            <form id="signupForm">
+                <div class="user-type-selector">
+                    <div class="user-type selected" data-type="teacher">
+                        <div class="user-type-icon">👩‍🏫</div>
+                        <h3>Teacher</h3>
+                        <p>Create & manage classes</p>
+                    </div>
+                    <div class="user-type" data-type="student">
+                        <div class="user-type-icon">🎓</div>
+                        <h3>Student</h3>
+                        <p>Join a class</p>
+                    </div>
+                </div>
+
+                <!-- Teacher Form Fields -->
+                <div id="teacherFields">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="school">School/Institution</label>
+                        <input type="text" id="school" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="math">Mathematics</option>
+                                <option value="science">Science</option>
+                                <option value="english">English</option>
+                                <option value="history">History</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="grade">Grade Level</label>
+                            <select id="grade" required>
+                                <option value="">Select Grade</option>
+                                <option value="k-2">K-2</option>
+                                <option value="3-5">3-5</option>
+                                <option value="6-8">6-8</option>
+                                <option value="9-12">9-12</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Form Fields -->
+                <div id="studentFields" style="display: none;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="studentFirstName">First Name</label>
+                            <input type="text" id="studentFirstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="studentLastName">Last Name</label>
+                            <input type="text" id="studentLastName">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentEmail">Email Address</label>
+                        <input type="email" id="studentEmail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="classCode">Class Code</label>
+                        <input type="text" id="classCode" placeholder="Enter the code provided by your teacher">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentGrade">Grade Level</label>
+                        <select id="studentGrade">
+                            <option value="">Select Grade</option>
+                            <option value="k">Kindergarten</option>
+                            <option value="1">1st Grade</option>
+                            <option value="2">2nd Grade</option>
+                            <option value="3">3rd Grade</option>
+                            <option value="4">4th Grade</option>
+                            <option value="5">5th Grade</option>
+                            <option value="6">6th Grade</option>
+                            <option value="7">7th Grade</option>
+                            <option value="8">8th Grade</option>
+                            <option value="9">9th Grade</option>
+                            <option value="10">10th Grade</option>
+                            <option value="11">11th Grade</option>
+                            <option value="12">12th Grade</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+
+            <div class="divider">
+                <span>Or continue with</span>
+            </div>
+
+            <div class="social-login">
+                <button class="social-btn">
+                    <span>🔍</span> Google
+                </button>
+                <button class="social-btn">
+                    <span>📘</span> Microsoft
+                </button>
+            </div>
+
+            <div class="toggle-form">
+                Already have an account? <a href="#" data-toggle="login">Login</a>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js" defer></script>
+</body>
+</html>
